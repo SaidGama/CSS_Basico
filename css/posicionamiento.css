@@ -1,0 +1,28 @@
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    color: white;
+}
+
+#two {
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    background: palevioletred;
+}
+
+#three{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgb(112, 168, 216);
+    border-radius: 10px;
+}
+.texto1{
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+    padding-left: 150px;
+}

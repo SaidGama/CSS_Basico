@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{ min-height: 100%;} /*indica que el mínimo de altura */
+html{height: 100%;} /*los item grid ocuparan el 100% de la pagina*/
+
+/*con >* todos los elementos dentro tendrás las mismas propiedades*/
+.grid-container > *{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+.header1{
+    grid-area: header1;
+    background-color: cornflowerblue;
+}
+.navbar{
+    grid-area: navbar;
+    background-color: burlywood;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: yellowgreen;
+}
+.main{
+    grid-area: main;
+    background-color: brown;
+}
+.footer1{
+    grid-area: footer1;
+    background-color: violet;
+}
+/*VistaCelular*/
+.grid-container{
+    display: grid;
+    grid-template-areas: "header1" "navbar" "main" "sidebar" "footer1";
+}
+/*Tablet*/
+@media(min-width:600px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        grid-template-rows: 10% 10% auto 15%;
+        grid-template-areas: 
+        "header1 header1"
+        "navbar navbar"
+        "sidebar main"
+        "footer1 footer1"
+        ;
+    }
+}
+/*Escritorio*/
+@media(min-width:900px){
+    .grid-container{
+        grid-template-columns: auto auto;
+        grid-template-rows: 10% 10% auto 15%;
+        grid-template-areas:
+        "header1 header1 header1"
+        "navbar navbar navbar"
+        "sidebar main main"
+        "footer1 footer1 footer1"
+        ;
+    }
+}

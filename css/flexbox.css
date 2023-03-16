@@ -1,0 +1,29 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around; */
+    align-content: center; 
+    overflow: scroll;
+}
+
+#one{
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    flex-grow: 1;
+}
+
+#two{
+    background-color: darkorchid;
+    width: 200px;
+    height: 200px;
+    flex-grow: 0.1;
+}
+
+#three{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    flex-basis: 0;
+}
